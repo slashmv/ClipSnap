@@ -542,7 +542,7 @@ export default function App() {
 
       <div style={{ display: "grid", gap: 8, gridTemplateColumns: "1fr auto" }}>
         <input placeholder="Paste YouTube URL" value={url} onChange={(e)=>setUrl(e.target.value)} style={{ padding: 8, fontSize: 16 }}/>
-        <button onClick={handleLoad}>Load</button>
+        <button onClick={handleLoad} style={{ padding: "8px 12px", fontSize: 16 }}>Load</button>
       </div>
 
       {videoId && (
@@ -687,7 +687,7 @@ export default function App() {
                 </>
               )}
 
-              <button onClick={createClip}>Clip & Save (Enter)</button>
+              <button onClick={createClip} style={{ marginLeft: headless ? 0 : "auto" }}>Clip & Save (Enter)</button>
 
               {/* Archive + Reset */}
               <input
